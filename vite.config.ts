@@ -21,12 +21,12 @@ export default defineConfig({
         shared: 'https://s3.ap-southeast-1.amazonaws.com/remote-app1.com/shared/dist/assets/shared.js',
         pharmacy: 'https://s3.ap-southeast-1.amazonaws.com/remote-app1.com/pharmacy/dist/assets/pharmacy.js',
       },
-      // exposes: {
-      //     './hooks': './src/hooks/context.ts',
-      //     './providers': './src/providers/context.tsx',
-      //     './reducers': './src/reducers/global.ts',
-      //     './stores': './src/stores/global.ts',
-      // },
+      exposes: {
+          './hooks': './src/hooks/context.ts',
+          './providers': './src/providers/context.tsx',
+          './reducers': './src/reducers/global.ts',
+          './stores': './src/stores/global.ts',
+      },
       shared: [
         "react",
         "react-dom",
